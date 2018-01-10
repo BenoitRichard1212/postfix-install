@@ -1,1 +1,11 @@
-t
+---
+- name: Make sure postfix is installed.
+  package:
+    name: postfix
+    state: present
+
+- name: Make sure postfix is started and enabled at boot.
+  service:
+    name: postfix
+    state: started
+    enabled: yes
