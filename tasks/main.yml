@@ -1,6 +1,6 @@
 ---
 - name: Make sure postfix is installed.
-  package:
+  apt:
     name: postfix
     state: present
 
